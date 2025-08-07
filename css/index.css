@@ -6,10 +6,33 @@ body {
     margin-top: 30px;
 }
 
+/*container*/
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: darkgray;
+}
 
+/*nav*/
+.container_nav {
+    background-color: aqua;
+    
+    width: 250px;
+}
+
+.navbar {
+    font-size: 22px;
+}
+
+.mine_container {
+    width: auto;
+    height: 100vh;
+    background-color: rgb(222, 43, 43);
+}
 
 /*img*/
 .imgPS {
+    
     border: 1px solid;
     height: 200px;
     width: 200px;
@@ -17,32 +40,63 @@ body {
 
 /*name*/
 .fullname {
-    
+    /*display: flex;
+    justify-content: center;*/
 }
 
 #name {
+    
     text-transform: uppercase;
+    
 }
 
-/*nav*/
-.navbar {
-    display: flex;
-}
+/*main*/
 
 section {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
+/*About*/
 #About p {
     text-align: justify;
 }
 
-#Experience li {
-    list-style: square;
+/*Experience*/
+#Experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+#Experience li {
+    display: block;
+    margin-bottom: 5px;
+    background-color: rgba(214, 214, 214, 0.815);
+    border-radius: 5px;
+    padding: 15px 15px;
+    width: 300px;
+}
+
+/*skills*/
+.container_skills {
+
+}
+
+#Skills {
+
+}
+
+/*Projects*/
+#Projects {
+
+}
+
+/*Connect*/
 #link {
-    color: rgba(116, 205, 130, 0.716);
+    color: rgb(0, 0, 0);
+    text-decoration-style: dashed;
+    text-decoration-color: rgb(5, 21, 238);
+    font-size: 20px;
 }
 
 /*headers*/
