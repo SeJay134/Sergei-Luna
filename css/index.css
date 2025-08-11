@@ -1,35 +1,154 @@
 body {
-    background-color: azure;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 30px;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.main_container {
+    display: flex;
+    height: 100vh;
+    border: 2px solid black;
+    
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    flex: 0 1 20%;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+/*img*/
+.imgPS {
     margin-top: 30px;
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+}
+
+/*nav*/
+.container_nav {
+    border: 2px solid black;
+    margin-top: 30px;
+    width: 250px;
+}
+
+.navbar {
+    font-size: 22px;
+}
+
+.right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    flex: 0 1 80%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/*name*/
+.fullname {
+    border: 2px solid black;
+    
 }
 
 #name {
+    
     text-transform: uppercase;
+    
 }
 
+/*main*/
+
 section {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+/*About*/
+.container_about {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    
+}
+
+#About {
+    
 }
 
 #About p {
     text-align: justify;
+    margin: 10px;
 }
 
-#Experience li {
-    list-style: square;
+/*Experience*/
+#Experience p {
+    text-align: justify;
+}
+
+.container_experience {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    
+}
+
+.container_job {
+    display: flex;
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/*skills*/
+.container_skills {
+
+}
+
+#Skills {
+
+}
+
+/*Projects*/
+#Projects {
+
+}
+
+/*Connect*/
+.container_connect {
+    display: flex;
+    flex-direction: row;
 }
 
 #link {
-    color: rgba(116, 205, 130, 0.716);
+    color: rgb(0, 0, 0);
+    text-decoration-style: dashed;
+    text-decoration-color: rgb(5, 21, 238);
+    font-size: 20px;
 }
 
+/*headers*/
 h1 {
     font-weight: bold;
 }
 
 h2 {
     color: rgba(26, 26, 26, 0.277);
+    text-align: center;
 }
+
+/*footer*/
