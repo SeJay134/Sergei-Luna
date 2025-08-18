@@ -7,7 +7,7 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="Sergei Patrushev's Portfolio" content="Sergei Patrushev's Portfolio">
         <meta name="author" content="Sergei Patrushev">
-        <meta http-equiv="refresh" content="30">
+        <!--<meta http-equiv="refresh" content="30">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -23,7 +23,7 @@
 <!--NAV-->
                     <div class="container_nav">
                         <nav class="navbar">
-                            <ul>
+                            <ul class="navbar_box">
                                 <li><a href="#About">About</a></li>
                                 <li><a href="#Experience">Experience</a></li>
                                 <li><a href="#Skills">Skills</a></li>
@@ -43,7 +43,7 @@
                     <div class="container_about">
                         <section id="About">
                             <h2>About</h2>
-                                <p>This is a paragraph about me.  Here's more info about me.</p>
+                                <p class="About_text_container">This is a paragraph about me.  Here's more info about me.</p>
                         </section>
                     </div>
 
@@ -51,21 +51,27 @@
                         <section id="Experience">
                             <h2>Experience</h2>
                                 <div class="container_job">
-                                    <h3>titleofjobbbbbbbbbbbbbbb</h3>
-                                    <p>01.01.2000 - description description description description description description
-                                        description description description description description description description
-                                        description description description description description description description
-                                    </p>
-                                    <h3>titleofjobbbbbbbbbbbbbbb</h3>
-                                    <p>01.01.2000 - description description description description description description
-                                        description description description description description description description
-                                        description description description description description description description
-                                    </p>
-                                    <h3>titleofjobbbbbbbbbbbbbbb</h3>
-                                    <p>01.01.2000 - description description description description description description
-                                        description description description description description description description
-                                        description description description description description description description
-                                    </p>
+                                    <div class="container_title_text">
+                                        <h3 class="container_job_title">title of job</h3>
+                                        <p class="container_job_text"><strong>01.01.2000</strong> - description description description description description description
+                                            description description description description description description description
+                                            description description description description description description description
+                                        </p>
+                                    </div>
+                                    <div class="container_title_text">
+                                        <h3 class="container_job_title">title of job</h3>
+                                        <p class="container_job_text"><strong>01.01.2000</strong> - description description description description description description
+                                            description description description description description description description
+                                            description description description description description description description
+                                        </p>
+                                    </div>
+                                    <div class="container_title_text">
+                                        <h3 class="container_job_title">title of job</h3>
+                                        <p class="container_job_text"><strong>01.01.2000</strong> - description description description description description description
+                                            description description description description description description description
+                                            description description description description description description description
+                                        </p>
+                                    </div>
                                 </div>
                         </section>
                     </div>
@@ -86,8 +92,10 @@
                     <div class="container_connect">
                         <section id="Connect">
                             <h2>Connect</h2>
-                                <a href="https://www.linkedin.com/" id="link"><i class="fa-brands fa-linkedin"></i></a></li> &nbsp &nbsp
-                                <a href="https://www.github.com/" id="link"><i class="fa-brands fa-square-github"></i></a></li>
+                                <div class="connect_linksbox">
+                                    <a href="https://www.linkedin.com/" id="link"><i class="fa-brands fa-linkedin"></i></a></li> &nbsp &nbsp
+                                    <a href="https://www.github.com/" id="link"><i class="fa-brands fa-square-github"></i></a></li>
+                                </div>
                         </section>
                     </div>
                 </div>

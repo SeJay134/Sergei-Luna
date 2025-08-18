@@ -2,6 +2,7 @@ body {
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100%;
+    background-color: rgb(220, 245, 228);
 }
 
 html {
@@ -11,18 +12,38 @@ html {
 .main_container {
     display: flex;
     height: 100vh;
-    border: 2px solid black;
-    
+    /*border: 2px solid black;*/ 
+}
+
+@media screen and (width <= 1000px) {
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        flex-direction: column;
+        height: 100vh;
+    }
 }
 
 .left_container {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     flex: 0 1 20%;
     align-items: center;
     overflow: hidden;
-    
+}
+
+/*left_container mobile version*/
+@media screen and (width <= 1000px) {
+    .left_container {
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: center;
+        height: 130px !important;
+        align-items: center;
+        flex: none !important;
+    }
 }
 
 /*img*/
@@ -33,22 +54,67 @@ html {
     width: 200px;
 }
 
+/*img mobile version*/
+@media screen and (width <= 1000px) {
+    .imgPS {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    }
+}
+
 /*nav*/
 .container_nav {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     margin-top: 30px;
     width: 250px;
 }
 
+@media screen and (width <= 1000px) {
+    .container_nav {
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 30px;
+        width: auto;
+    }
+}
+
 .navbar {
+    /*font-size: 22px;*/
+}
+
+.navbar a {
     font-size: 22px;
+    list-style: none;
+    text-decoration-line: none;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    0 0 1em #7fbfff,
+    0 0 0.2em #7fbfff;
+    color: white;
+    font: 1.5em Georgia, serif;
+}
+
+.navbar_box {
+    list-style: none;
+}
+
+@media screen and (width <= 1000px) {
+    .navbar_box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        list-style: none;
+        padding-left: 0px;
+    }
 }
 
 .right_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     flex: 0 1 80%;
     overflow-x: auto;
     overflow-y: auto;
@@ -56,21 +122,23 @@ html {
 
 /*name*/
 .fullname {
-    border: 2px solid black;
-    
+    /*border: 2px solid black;*/ 
 }
 
 #name {
-    
     text-transform: uppercase;
     
 }
+
+/*name mobile version*/
+
 
 /*main*/
 
 section {
     margin-top: 30px;
-    border: 2px solid black;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
 }
 
 /*About*/
@@ -82,8 +150,11 @@ section {
     
 }
 
-#About {
-    
+.About_text_container {
+    background-color: #e4f1fe;
+    border-radius: 5px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.075),
+  0 6px 6px rgba(0, 0, 0, 0.041);
 }
 
 #About p {
@@ -92,26 +163,46 @@ section {
 }
 
 /*Experience*/
-#Experience p {
-    text-align: justify;
-}
-
 .container_experience {
     display: block;
     width: 100%;
     max-width: 600px;
     min-width: 200px;
     height: auto;
-    
+}
+
+#Experience p {
+    text-align: justify;
 }
 
 .container_job {
     display: flex;
-    border: 2px solid black;
     width: auto;
     height: auto;
     flex-direction: column;
     margin: 10px;
+    border-radius: 5px;
+}
+
+.container_title_text {
+    border: 2px solid rgba(0, 0, 0, 0.045);
+    background-color: rgba(0, 0, 0, 0.035);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container_job_title {
+    text-decoration: underline rgb(135, 135, 135);
+}
+
+.container_job_text {
+    background-color: #e4f1fe;
+    text-indent: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.075),
+    0 6px 6px rgba(0, 0, 0, 0.041);
+    border: 1px solid rgb(0, 0, 0, 0.065);
 }
 
 /*skills*/
@@ -130,8 +221,19 @@ section {
 
 /*Connect*/
 .container_connect {
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
+}
+
+#Connect {
+    
+}
+
+.connect_linksbox {
+    display: grid;
+    grid-template-columns: [col1] 20px [col2] 20px [col3] 20px;
+    grid-template-rows: [ro1] 20px [ro2] 20px;
+    justify-content: center;
 }
 
 #link {
