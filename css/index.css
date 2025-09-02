@@ -1,88 +1,13 @@
 body {
+    display: flex;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 100%;
     background-color: rgb(220, 245, 228);
+    justify-content: center;
 }
 
 html {
     height: 100%;
-}
-
-.main_container {
-    display: flex;
-    height: 100vh;
-    /*border: 2px solid black;*/ 
-}
-
-@media screen and (width <= 1000px) {
-    .main_container {
-        display: flex;
-        /*border: 2px solid black;*/
-        flex-direction: column;
-        height: 100vh;
-    }
-}
-
-.left_container {
-    display: flex;
-    flex-direction: column;
-    /*border: 2px solid black;*/
-    flex: 0 1 20%;
-    align-items: center;
-    overflow: hidden;
-}
-
-/*left_container mobile version*/
-@media screen and (width <= 1000px) {
-    .left_container {
-        display: flex;
-        overflow: hidden;
-        flex-direction: row;
-        justify-content: center;
-        height: 130px !important;
-        align-items: center;
-        flex: none !important;
-    }
-}
-
-/*img*/
-.imgPS {
-    margin-top: 30px;
-    border: 1px solid;
-    height: 200px;
-    width: 200px;
-}
-
-/*img mobile version*/
-@media screen and (width <= 1000px) {
-    .imgPS {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid;
-    height: 100px;
-    width: 100px;
-    }
-}
-
-/*nav*/
-.container_nav {
-    /*border: 2px solid black;*/
-    margin-top: 30px;
-    width: 250px;
-}
-
-@media screen and (width <= 1000px) {
-    .container_nav {
-        /*border: 2px solid black;*/
-        margin-top: 0px;
-        margin-left: 30px;
-        width: auto;
-    }
-}
-
-.navbar {
-    /*font-size: 22px;*/
 }
 
 .navbar a {
@@ -96,44 +21,9 @@ html {
     font: 1.5em Georgia, serif;
 }
 
-.navbar_box {
-    list-style: none;
-}
-
-@media screen and (width <= 1000px) {
-    .navbar_box {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        list-style: none;
-        padding-left: 0px;
-    }
-}
-
-.right_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*border: 2px solid black;*/
-    flex: 0 1 80%;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
-/*name*/
-.fullname {
-    /*border: 2px solid black;*/ 
-}
-
 #name {
     text-transform: uppercase;
-    
 }
-
-/*name mobile version*/
-
-
-/*main*/
 
 section {
     margin-top: 30px;
@@ -141,20 +31,18 @@ section {
     border-radius: 5px;
 }
 
-/*About*/
 .container_about {
     width: 100%;
     max-width: 600px;
     min-width: 200px;
     height: auto;
-    
 }
 
 .About_text_container {
     background-color: #e4f1fe;
     border-radius: 5px;
     box-shadow: 2px 5px rgba(0, 0, 0, 0.075),
-  0 6px 6px rgba(0, 0, 0, 0.041);
+    0 6px 6px rgba(0, 0, 0, 0.041);
 }
 
 #About p {
@@ -162,7 +50,6 @@ section {
     margin: 10px;
 }
 
-/*Experience*/
 .container_experience {
     display: block;
     width: 100%;
@@ -205,30 +92,6 @@ section {
     border: 1px solid rgb(0, 0, 0, 0.065);
 }
 
-/*skills*/
-.container_skills {
-
-}
-
-#Skills {
-
-}
-
-/*Projects*/
-#Projects {
-
-}
-
-/*Connect*/
-.container_connect {
-    /*display: flex;
-    flex-direction: row;*/
-}
-
-#Connect {
-    
-}
-
 .connect_linksbox {
     display: grid;
     grid-template-columns: [col1] 20px [col2] 20px [col3] 20px;
@@ -243,7 +106,6 @@ section {
     font-size: 20px;
 }
 
-/*headers*/
 h1 {
     font-weight: bold;
 }
@@ -253,4 +115,320 @@ h2 {
     text-align: center;
 }
 
-/*footer*/
+.skills_ul_box {
+    display: flex;
+    list-style: none;
+    font-size: 26px;
+    /*border: 2px solid black;*/
+    gap: 10px;
+    padding-left: 0px;
+}
+
+/* ------------------- 480 ----------------- */
+@media screen and (max-width: 480px) {
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        flex-direction: column;
+        min-width: 425px;
+    }
+    .left_container {
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        position: fixed;
+        z-index: 1000;
+        background-color: rgb(220, 245, 228);
+        top: 0;
+        height: 120px;
+        width: 100%;
+        left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .imgPS {
+        border: 1px solid;
+        height: 80px;
+        width: 80px;
+        border: 2px solid black;
+    }
+    .container_nav {
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 15px;
+        width: auto;
+        font-size: 10px;
+    }
+    .navbar_box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        list-style: none;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .About_text_container, .container_job_text {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container_job_title {
+        font-size: 20px;
+    }
+    .skills_ul_box {
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        /*border: 2px solid black;*/
+        gap: 8px;
+        padding-left: 0px;
+    }
+    .right_container {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        /*border: 2px solid black;*/
+        width: auto;
+        margin-top: 120px;
+}
+    .container_footer {
+        margin-top: 100px;
+        height: 50px;
+        /*border: 2px solid black;*/
+        text-align: center;
+    }
+}
+
+/* --------------- 481 --------------------- */
+@media screen and (min-width: 481px) {
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        flex-direction: column;
+    }
+    .left_container {
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        background-color: rgb(220, 245, 228);
+        top: 0;
+        height: 130px;
+        width: 100%;
+        left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .imgPS {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        height: 100px;
+        width: 100px;
+    }
+    .container_nav {
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 15px;
+        width: auto;
+        font-size: 10px;
+    }
+    .navbar_box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        list-style: none;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .About_text_container, .container_job_text {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .container_job_title {
+        font-size: 20px;
+    }
+    .skills_ul_box {
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        /*border: 2px solid black;*/
+        gap: 8px;
+        padding-left: 0px;
+    }
+    .right_container {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        /*border: 2px solid black;*/
+        width: auto;
+        margin-top: 130px;
+}
+    .container_footer {
+        margin-top: 100px;
+        height: 50px;
+        /*border: 2px solid black;*/
+        text-align: center;
+    }
+}
+
+/* --------------- 769 ------------------------ */
+@media screen and (min-width: 769px) {
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        flex-direction: column;
+    }
+    .left_container {
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /*border: 2px solid black;*/
+        height: 250px;
+        position: fixed;
+        z-index: 1000;
+        background-color: rgb(220, 245, 228);
+        top: 0;
+        left: 0px;
+        
+    }
+    .imgPS {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+    }
+    .container_nav {
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 25px;
+        width: auto;
+        font-size: 16px;
+    }
+    .navbar_box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        list-style: none;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .About_text_container, .container_job_text {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+    .container_job_title {
+        font-size: 22px;
+    }
+    .right_container {
+        display: flex;
+        margin-top: 250px;
+        flex-direction: column;
+        align-items: center;
+        /*border: 2px solid black;*/
+        width: auto;
+}
+    .container_footer {
+        margin-top: 100px;
+        height: 50px;
+        /*border: 2px solid black;*/
+        text-align: center;
+    }
+}
+
+/* ------------------ 1025 ----------------------- */
+
+@media screen and (min-width: 1025px) {
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        height: 100vh;
+        max-width: 1200px;
+    }
+    .left_container {
+        display: flex;
+        justify-content: flex-start;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 10%;
+        /*border: 2px solid black;*/
+    }
+    .imgPS {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 1px solid;
+        height: 135px;
+        width: 135px;
+    }
+    .navbar_box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .container_nav {
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        width: auto;
+        font-size: 18px;
+    }
+    .img_nav_boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .About_text_container, .container_job_text {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container_job_title {
+        font-size: 24px;
+    }
+    .right_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 250px;
+        /*border: 2px solid black;*/
+        width: auto;
+        flex: 1;
+}
+    .container_footer {
+        margin-top: 100px;
+        height: 50px;
+        position: relative;
+        margin-left: -250px;
+        width: calc(100% + 250px);
+        /*border: 2px solid black;*/
+        text-align: center;
+    }
+}
