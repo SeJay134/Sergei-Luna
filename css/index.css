@@ -4,6 +4,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(220, 245, 228);
     justify-content: center;
+    font-size: 18px;
 }
 
 html {
@@ -309,15 +310,15 @@ h2 {
         margin-top: 0px;
         margin-bottom: 0px;
         border: 1px solid black;
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
     }
     .container_nav {
         /*border: 2px solid black;*/
         margin-top: 0px;
         margin-left: 25px;
         width: auto;
-        font-size: 16px;
+        font-size: 14px;
     }
     .navbar_box {
         display: flex;
@@ -378,8 +379,8 @@ h2 {
         margin-top: 30px;
         margin-bottom: 30px;
         border: 1px solid;
-        height: 135px;
-        width: 135px;
+        height: 200px;
+        width: 200px;
     }
     .navbar_box {
         display: flex;
@@ -422,7 +423,100 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         flex: 1;
-}
+    }
+    
+    .container_leave_message {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .leave_message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input::placeholder {
+        opacity: 0.3;
+    }
+    textarea::placeholder {
+        opacity: 0.3;
+    }
+    .input_text {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+    .input_email {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+    .users_message {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 150px;
+        font-size: 1.3em;
+    }
+    .button_submit {
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .container_messages {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        border: 2px solid black;
+    }
+    .messages_box {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: auto;
+        border: 2px solid black;
+    }
+    .messages_ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.1em;
+        border: 2px solid black;
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: auto;
+        padding-left: 0px;
+    }
+    .messages_ul li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .messages_ul li {
+        margin-bottom: 20px;
+    }
+    .messages_ul li span {
+        display: block;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
+    }
+    .remove_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        
+    }
     .container_footer {
         margin-top: 100px;
         height: 50px;
