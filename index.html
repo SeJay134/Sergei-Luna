@@ -29,6 +29,7 @@
                                 <li><a href="#Skills">Skills</a></li>
                                 <li><a href="#Projects">Projects</a></li>
                                 <li><a href="#Connect">Connect</a></li>
+                                <li><a href="#leave_message">Leave a Message</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -101,6 +102,44 @@
                                 </div>
                         </section>
                     </div>
+<!--12-->
+                    <!--Above the <footer> element, add an empty <section> element-->
+                    <div class="container_leave_message">
+                        <section id="leave_message">
+                            <!--Inside the new <section> element, create a level-two heading that says "Leave a Message"-->
+                            <h2>Leave a Message</h2>
+                            <!--After the heading, create an HTML <form> element with a name attribute that equals "leave_message"-->
+                            <form name="leave_message" class="leave_message">
+                                <!--Inside the <form> element, add the following:-->
+                                <!--<input> element with attributes: type "text", name "usersName", and required true-->
+                                <input class="input_text" type="text" name="usersName" required="true" label="text" maxlength="35" placeholder="Your name, example: Bob" /><br /><br />
+                                <!--<input> element with attributes: type "email", name "usersEmail", and required true-->
+                                <input class="input_email" type="email" name="usersEmail" required="true" label="email" maxlength="35" placeholder="Your email, example: name@gmail.com" /><br /><br />
+                                <!--<textarea> element with attributes: name "usersMessage" and required true-->
+                                <textarea class="users_message" name="usersMessage" required="true" label="usersMessage" maxlength="190" placeholder="190 letters"></textarea><br /><br />
+                                <!--Each form field should also have a corresponding <label> element-->
+                                <!--(Optional) Use <br> elements to stack the form fields-->
+                                <!--Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked-->
+
+                                <!--<button> element that says "Submit" and has type attribute equal to "submit"-->
+                                <div class="buttons">
+                                    <button class="button_submit" name="submit" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                    <!--After the <section> element from the previous step, create a new <section> element with an id of "messages"-->
+                    <div class="container_messages">
+                        <section id="messages">
+                            <!-- Inside that element, create a level-two heading that says "Messages"-->
+                            <h2>Messages</h2>
+                            <div class="messages_box">
+                                <!--After the heading, add an empty unordered list (<ul>) element-->
+                                <ul class="messages_ul"></ul>
+                            </div>
+                        </section>
+                    </div>
+
 <!--FOOTER-->
                     <div class="container_footer">    
                     </div>
