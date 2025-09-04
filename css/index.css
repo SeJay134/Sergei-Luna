@@ -116,14 +116,7 @@ h2 {
     text-align: center;
 }
 
-.skills_ul_box {
-    display: flex;
-    list-style: none;
-    font-size: 26px;
-    /*border: 2px solid black;*/
-    gap: 10px;
-    padding-left: 0px;
-}
+
 
 /* ------------------- 480 ----------------- */
 @media screen and (max-width: 480px) {
@@ -139,6 +132,8 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
         height: 150px;
         position: fixed;
         z-index: 1000;
@@ -146,13 +141,15 @@ h2 {
         top: 0;
         height: 120px;
         width: 100%;
+        max-width: 460px;
+        min-width: 400px;
         left: 0px;
         /*border: 2px solid black;*/
     }
     .imgPS {
         border: 1px solid;
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
         border: 2px solid black;
     }
     .container_nav {
@@ -181,14 +178,6 @@ h2 {
     .container_job_title {
         font-size: 20px;
     }
-    .skills_ul_box {
-        display: flex;
-        list-style: none;
-        font-size: 20px;
-        /*border: 2px solid black;*/
-        gap: 8px;
-        padding-left: 0px;
-    }
     .right_container {
         display: flex;
         margin-top: 30px;
@@ -198,6 +187,122 @@ h2 {
         width: auto;
         margin-top: 120px;
 }
+/*------------------------------------new----------------------*/
+.skills_ul_box {
+        display: flex;
+        list-style: none;
+        font-size: 25px;
+        /*border: 2px solid black;*/
+        gap: 30px;
+        padding-left: 0px;
+        background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.container_leave_message {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .leave_message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input::placeholder {
+        opacity: 0.3;
+    }
+    textarea::placeholder {
+        opacity: 0.3;
+    }
+    .input_text {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        height: 35px;
+        font-size: 1em;
+    }
+    .input_email {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        height: 35px;
+        font-size: 1em;
+    }
+    .users_message {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        height: 100px;
+        font-size: 1em;
+    }
+    .button_submit {
+        width: 90px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color:rgb(179, 179, 179);
+    }
+    .button_submit:hover {
+        background-color: rgb(213, 213, 213);
+    }
+    .container_messages {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .messages_box {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        height: auto;
+        /*border: 2px solid black;*/
+    }
+    .messages_ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1em;
+        /*border: 2px solid black;*/
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        height: auto;
+        padding-left: 0px;
+    }
+    .messages_ul li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .messages_ul li {
+        margin-bottom: 20px;
+        background-color: rgba(220, 245, 228, 0.14);
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+    }
+    .messages_ul li span {
+        display: block;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
+    }
+    .remove_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 360px;
+        border-color:rgb(179, 179, 179);
+    }
+    .remove_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
+/*-------------------------------------------------------------*/
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -225,6 +330,7 @@ h2 {
         top: 0;
         height: 130px;
         width: 100%;
+        padding-left: 10px;
         left: 0px;
         /*border: 2px solid black;*/
     }
@@ -232,8 +338,8 @@ h2 {
         margin-top: 10px;
         margin-bottom: 10px;
         border: 1px solid;
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
     .container_nav {
         /*border: 2px solid black;*/
@@ -259,14 +365,6 @@ h2 {
     .container_job_title {
         font-size: 20px;
     }
-    .skills_ul_box {
-        display: flex;
-        list-style: none;
-        font-size: 20px;
-        /*border: 2px solid black;*/
-        gap: 8px;
-        padding-left: 0px;
-    }
     .right_container {
         display: flex;
         margin-top: 30px;
@@ -276,6 +374,122 @@ h2 {
         width: auto;
         margin-top: 130px;
 }
+/*------------------------------------new----------------------*/
+    .skills_ul_box {
+        display: flex;
+        list-style: none;
+        font-size: 28px;
+        /*border: 2px solid black;*/
+        gap: 30px;
+        padding-left: 0px;
+        background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.container_leave_message {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .leave_message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input::placeholder {
+        opacity: 0.3;
+    }
+    textarea::placeholder {
+        opacity: 0.3;
+    }
+    .input_text {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        height: 47px;
+        font-size: 1.2em;
+    }
+    .input_email {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        height: 47px;
+        font-size: 1.2em;
+    }
+    .users_message {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        height: 150px;
+        font-size: 1.2em;
+    }
+    .button_submit {
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color:rgb(179, 179, 179);
+    }
+    .button_submit:hover {
+        background-color: rgb(213, 213, 213);
+    }
+    .container_messages {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .messages_box {
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        height: auto;
+        /*border: 2px solid black;*/
+    }
+    .messages_ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.1em;
+        /*border: 2px solid black;*/
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        max-width: 450px;
+        min-width: 200px;
+        height: auto;
+        padding-left: 0px;
+    }
+    .messages_ul li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .messages_ul li {
+        margin-bottom: 20px;
+        background-color: rgba(220, 245, 228, 0.14);
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+    }
+    .messages_ul li span {
+        display: block;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
+    }
+    .remove_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 370px;
+        border-color:rgb(179, 179, 179);
+    }
+    .remove_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
+/*-------------------------------------------------------------*/
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -345,86 +559,19 @@ h2 {
         align-items: center;
         /*border: 2px solid black;*/
         width: auto;
-}
-    .container_footer {
-        margin-top: 100px;
-        height: 50px;
-        /*border: 2px solid black;*/
-        text-align: center;
     }
-}
-
-/* ------------------ 1025 ----------------------- */
-
-@media screen and (min-width: 1025px) {
-    .main_container {
+/*------------------------------------new----------------------*/
+    .skills_ul_box {
         display: flex;
-        /*border: 2px solid black;*/
-        height: 100vh;
-        max-width: 1200px;
-    }
-    .left_container {
-        display: flex;
-        justify-content: flex-start;
-        width: 250px;
-        height: 100vh;
-        overflow: hidden;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        left: 10%;
-        /*border: 2px solid black;*/
-    }
-    .imgPS {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 1px solid;
-        height: 200px;
-        width: 200px;
-    }
-    .navbar_box {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         list-style: none;
+        font-size: 32px;
+        /*border: 2px solid black;*/
+        gap: 30px;
         padding-left: 0px;
-        /*border: 2px solid black;*/
+        background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .container_nav {
-        /*border: 2px solid black;*/
-        margin-top: 0px;
-        margin-left: 0px;
-        padding-left: 0px;
-        width: auto;
-        font-size: 18px;
-    }
-    .img_nav_boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .About_text_container, .container_job_text {
-        font-size: 18px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    .container_job_title {
-        font-size: 24px;
-    }
-    .right_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0px;
-        margin-left: 250px;
-        /*border: 2px solid black;*/
-        width: auto;
-        flex: 1;
-    }
-    
     .container_leave_message {
         width: 100%;
         max-width: 600px;
@@ -468,26 +615,30 @@ h2 {
         height: 40px;
         border-radius: 5px;
         cursor: pointer;
+        border-color:rgb(179, 179, 179);
+    }
+    .button_submit:hover {
+        background-color: rgb(213, 213, 213);
     }
     .container_messages {
         width: 100%;
         max-width: 500px;
         min-width: 200px;
-        border: 2px solid black;
+        /*border: 2px solid black;*/
     }
     .messages_box {
         width: 100%;
         max-width: 500px;
         min-width: 200px;
         height: auto;
-        border: 2px solid black;
+        /*border: 2px solid black;*/
     }
     .messages_ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         font-size: 1.1em;
-        border: 2px solid black;
+        /*border: 2px solid black;*/
         list-style: none;
         text-decoration: none;
         width: 100%;
@@ -502,6 +653,9 @@ h2 {
     }
     .messages_ul li {
         margin-bottom: 20px;
+        background-color: rgba(220, 245, 228, 0.14);
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
     }
     .messages_ul li span {
         display: block;
@@ -515,9 +669,206 @@ h2 {
         border-radius: 2px;
         cursor: pointer;
         margin-top: 10px;
-        
+        margin-left: 418px;
+        border-color:rgb(179, 179, 179);
     }
+    .remove_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
+/*-------------------------------------------------------------*/
     .container_footer {
+        margin-top: 100px;
+        height: 50px;
+        /*border: 2px solid black;*/
+        text-align: center;
+    }
+}
+
+/* ------------------ 1025 ----------------------- */
+
+@media screen and (min-width: 1025px) { /**/
+    .main_container {
+        display: flex;
+        /*border: 2px solid black;*/
+        height: 100vh;
+        max-width: 1200px;
+    }
+    .left_container { /**/
+        display: flex;
+        justify-content: flex-start;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 10%;
+        /*border: 2px solid black;*/
+    }
+    .imgPS { /**/
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 1px solid;
+        height: 200px;
+        width: 200px;
+    }
+    .navbar_box { /**/
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+    }
+    .container_nav { /**/
+        /*border: 2px solid black;*/
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        width: auto;
+        font-size: 18px;
+    }
+    .img_nav_boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .About_text_container, .container_job_text { /**/
+        font-size: 18px;
+    }
+
+    h2 { /**/
+        font-size: 28px;
+    }
+
+    .container_job_title { /**/
+        font-size: 24px;
+    }
+    .right_container { /**/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 250px;
+        /*border: 2px solid black;*/
+        width: auto;
+        flex: 1;
+    }
+    .skills_ul_box {
+        display: flex;
+        list-style: none;
+        font-size: 32px;
+        /*border: 2px solid black;*/
+        gap: 30px;
+        padding-left: 0px;
+        background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+    .container_leave_message {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .leave_message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input::placeholder {
+        opacity: 0.3;
+    }
+    textarea::placeholder {
+        opacity: 0.3;
+    }
+    .input_text {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+    .input_email {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+    .users_message {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: 150px;
+        font-size: 1.3em;
+    }
+    .button_submit {
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color:rgb(179, 179, 179);
+    }
+    .button_submit:hover {
+        background-color: rgb(213, 213, 213);
+    }
+    .container_messages {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    .messages_box {
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: auto;
+        /*border: 2px solid black;*/
+    }
+    .messages_ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.1em;
+        /*border: 2px solid black;*/
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        max-width: 500px;
+        min-width: 200px;
+        height: auto;
+        padding-left: 0px;
+    }
+    .messages_ul li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .messages_ul li {
+        margin-bottom: 20px;
+        background-color: rgba(220, 245, 228, 0.14);
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+    }
+    .messages_ul li span {
+        display: block;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
+    }
+    .remove_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 418px;
+        border-color:rgb(179, 179, 179);
+    }
+    .remove_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
+    .container_footer { /**/
         margin-top: 100px;
         height: 50px;
         position: relative;

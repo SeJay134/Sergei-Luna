@@ -64,7 +64,7 @@ let messageForm = document.querySelector(".leave_message");
     /* On the next line, set the inner HTML of your newMessage element with the following information: */
     /* <a> element that displays the "usersName" and is a clickable link to the "usersEmail" (hint: use the mailto: prefix) */
     /* <span> element that displays the "usersMessage" */
-    newMessage.innerHTML = `<a href = "mailto:${usersEmail}">&nbsp;&nbsp;${usersName}</a>&nbsp;&nbsp;<span>${usersMessage}</span>`
+    newMessage.innerHTML = `<a href = "mailto:${usersEmail}">${usersName}</a>&nbsp;&nbsp;<span>${usersMessage}</span>`
     
     /* Create a variable named removeButton that makes a new <button> element */
     let removeButton = document.createElement("button");
