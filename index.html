@@ -89,7 +89,7 @@
                     <div class="container_projects">
                         <section id="Projects">
                             <h2>Projects</h2>
-                            <ul></ul>
+                            <ul class="elementUl"></ul>
                         </section>
                     </div>
 
@@ -112,11 +112,11 @@
                             <form name="leave_message" class="leave_message">
                                 <!--Inside the <form> element, add the following:-->
                                 <!--<input> element with attributes: type "text", name "usersName", and required true-->
-                                <input class="input_text" type="text" name="usersName" required="true" label="text" maxlength="35" placeholder="Your name, example: Bob" /><br /><br />
+                                <input class="input_text" type="text" name="usersName" required="true" label="text" maxlength="35" placeholder="Your name, example: Bob"  /><br />
                                 <!--<input> element with attributes: type "email", name "usersEmail", and required true-->
-                                <input class="input_email" type="email" name="usersEmail" required="true" label="email" maxlength="35" placeholder="Your email, example: name@gmail.com" /><br /><br />
+                                <input class="input_email" type="email" name="usersEmail" required="true" label="email" maxlength="35" placeholder="Your email, example: name@gmail.com" style="display: none;" /><br />
                                 <!--<textarea> element with attributes: name "usersMessage" and required true-->
-                                <textarea class="users_message" name="usersMessage" required="true" label="usersMessage" maxlength="190" placeholder="190 letters"></textarea><br /><br />
+                                <textarea class="users_message" name="usersMessage" required="true" label="usersMessage" maxlength="190" placeholder="190 letters" style="display: none;"></textarea><br />
                                 <!--Each form field should also have a corresponding <label> element-->
                                 <!--(Optional) Use <br> elements to stack the form fields-->
                                 <!--Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked-->

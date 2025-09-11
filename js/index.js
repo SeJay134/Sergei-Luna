@@ -92,3 +92,25 @@ let messageForm = document.querySelector(".leave_message");
 /* Inside the callback function, on the very last line, add a new line of code to clear the form */
     this.reset();
 });
+
+/* hided elements */
+const textInput = document.querySelector(".input_text");
+const emailInput = document.querySelector(".input_email");
+const messageInput = document.querySelector(".users_message");
+const buttonSubmitInput = document.querySelector(".button_submit");
+
+textInput.addEventListener("input", function() {
+    if (this.value.trim() !== "") {
+        emailInput.style.display = "block";
+    } else {
+        messageInput.style.display = "none";
+        buttonSubmitInput.style.display = "none";
+    }
+});
+
+emailInput.addEventListener("input", function() {
+    if (this.value.trim() !== "") {
+        messageInput.style.display = "block";
+        buttonSubmitInput.style.display = "block";
+    }
+});
