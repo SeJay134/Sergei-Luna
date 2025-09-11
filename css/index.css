@@ -174,7 +174,6 @@ h2 {
     h2 {
         font-size: 24px;
     }
-
     .container_job_title {
         font-size: 20px;
     }
@@ -186,9 +185,9 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         margin-top: 120px;
-}
-/*------------------------------------new----------------------*/
-.skills_ul_box {
+    }
+
+    .skills_ul_box {
         display: flex;
         list-style: none;
         font-size: 25px;
@@ -198,8 +197,8 @@ h2 {
         background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-}
-.container_leave_message {
+    }
+    .container_leave_message {
         width: 100%;
         max-width: 450px;
         min-width: 200px;
@@ -302,7 +301,6 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
-/*-------------------------------------------------------------*/
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -373,8 +371,7 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         margin-top: 130px;
-}
-/*------------------------------------new----------------------*/
+    }
     .skills_ul_box {
         display: flex;
         list-style: none;
@@ -385,8 +382,8 @@ h2 {
         background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-}
-.container_leave_message {
+    }
+    .container_leave_message {
         width: 100%;
         max-width: 600px;
         min-width: 200px;
@@ -489,7 +486,6 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
-/*-------------------------------------------------------------*/
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -518,7 +514,6 @@ h2 {
         background-color: rgb(220, 245, 228);
         top: 0;
         left: 0px;
-        
     }
     .imgPS {
         margin-top: 0px;
@@ -560,7 +555,6 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
     }
-/*------------------------------------new----------------------*/
     .skills_ul_box {
         display: flex;
         list-style: none;
@@ -675,7 +669,6 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
-/*-------------------------------------------------------------*/
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -764,7 +757,7 @@ h2 {
         background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-}
+    }
     .container_leave_message {
         width: 100%;
         max-width: 600px;
