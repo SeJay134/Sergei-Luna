@@ -92,3 +92,96 @@ let messageForm = document.querySelector(".leave_message");
 /* Inside the callback function, on the very last line, add a new line of code to clear the form */
     this.reset();
 });
+
+/* hided elements */
+const textInput = document.querySelector(".input_text");
+const emailInput = document.querySelector(".input_email");
+const messageInput = document.querySelector(".users_message");
+const buttonSubmitInput = document.querySelector(".button_submit");
+
+textInput.addEventListener("input", function() {
+    if (this.value.trim() !== "") {
+        emailInput.style.display = "block";
+    } else {
+        messageInput.style.display = "none";
+        buttonSubmitInput.style.display = "none";
+    }
+});
+
+emailInput.addEventListener("input", function() {
+    if (this.value.trim() !== "") {
+        messageInput.style.display = "block";
+        buttonSubmitInput.style.display = "block";
+    }
+});
+
+/* Ls - 13 */
+/*
+https://github.com/SeJay134?tab=repositories
+https://api.github.com/users/{GITHUB_USERNAME}/repos
+
+https://api.github.com/users/SeJay134/repos
+*/
+/*
+Using the Fetch API, create a "GET" request to https://api.github.com/users/{GITHUB_USERNAME}/repos 
+where {GITHUB_USERNAME} is your username for your GitHub account
+*/
+/*Chain a then method to your fetch call and pass it a function that returns the response JSON data*/
+/* Chain a catch() function to your fetch call to handle errors from the server so the user would know 
+what happened if your Projects section was empty. */
+/*
+Chain another then method and pass it a callback function to parse the response and store it in a variable named repositories
+hint: JSON.parse(this.response)
+Console.log the value of repositories to better see the data returned from your API fetch
+Save and refresh your browser (or just check your browser for changes if using live extension)
+You should see the list of your GitHub repositories displayed in your console.
+*/
+
+/* Create a variable names projectSection; using "DOM Selection" to select the projects section by id */
+let projectSection = document.getElementById("Projects");
+console.log("projectSection", projectSection);
+/* Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire 
+document) to select the element */
+let projectList = projectSection.querySelector(".elementUl");
+
+let repositories;
+fetch('https://api.github.com/users/sejay134/repos')
+    .then(respond => {
+        console.log("respond", respond)
+        if (respond.ok === false) {
+            throw new Error(`Error: ${respond.status} ${respond.text}`);
+        }
+        return respond.json();
+    })
+    .then(data => {
+        console.log("myData", data)
+        repositories = data;
+        console.log("repo", repositories);
+        if (repositories.length === 0) {
+            let noItem = document.createElement("li");
+            noItem.innerHTML = "No added Projects";
+            projectList.appendChild(noItem);
+        }
+        /* Create a for loop to iterate over your repositories Array, starting at index 0 */
+        /* Inside the loop, create a variable named project to make a new list item (li) element
+            hint: createElement method */
+        for (let x = 0; x < repositories.length; x++) {
+            let project = document.createElement("li");
+            console.log("project_li", project);
+            /* On the next line, set the inner text of your project variable to the current Array element's name property
+            hint: access the Array element using bracket notation */
+            project.innerHTML = `${repositories[x].name}`;
+            /* On the next line, append the project element to the projectList element
+            hint: appendChild method */
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.log("error", error)
+        let noproject = document.createElement("li");
+        noproject.textContent = "error";
+        projectList.appendChild(noproject);
+    })
+
+
+
