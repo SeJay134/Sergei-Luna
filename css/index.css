@@ -93,12 +93,7 @@ section {
     border: 1px solid rgb(0, 0, 0, 0.065);
 }
 
-.connect_linksbox {
-    display: grid;
-    grid-template-columns: [col1] 20px [col2] 20px [col3] 20px;
-    grid-template-rows: [ro1] 20px [ro2] 20px;
-    justify-content: center;
-}
+
 
 #link {
     color: rgb(0, 0, 0);
@@ -197,6 +192,54 @@ h2 {
         background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    /*---------- projects ----------------*/
+    .container_projects {
+        width: 100%;
+        max-width: 440px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    /*
+    #Projects {
+        border: 2px solid black;
+    }
+    */
+    .elementUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        font-size: 18px;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+        font-family: 'Press Start 2P', cursive;
+        color: rgb(0, 85, 255);
+        text-shadow:
+        0.5px 0.5px 0 #ccc,
+        1px 1px 0 #bbb,
+        1.5px 1.5px 0 #aaa,
+        2px 2px 0 #999,
+        2.5px 2.5px 0 #888,
+        3px 3px 0 #777,
+        3.5px 3.5px 0 #666;
+    }
+    .elementUl li {
+        margin-top: 15px;
+    }
+   
+    /*------------------------------------*/
+    .connect_linksbox {
+        display: grid;
+        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px;
+        grid-template-rows: [ro1] 30px [ro2] 30px;
+        justify-content: center;
+}
+    .fa-brands.fa-linkedin {
+        font-size: 30px;
+    }
+    .fa-brands.fa-square-github {
+        font-size: 30px;
     }
     .container_leave_message {
         width: 100%;
@@ -383,6 +426,54 @@ h2 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    /*---------- projects ----------------*/
+    .container_projects {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    /*
+    #Projects {
+        border: 2px solid black;
+    }
+    */
+    .elementUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        font-size: 22px;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+        font-family: 'Press Start 2P', cursive;
+        color: rgb(0, 85, 255);
+        text-shadow:
+        0.5px 0.5px 0 #ccc,
+        1px 1px 0 #bbb,
+        1.5px 1.5px 0 #aaa,
+        2px 2px 0 #999,
+        2.5px 2.5px 0 #888,
+        3px 3px 0 #777,
+        3.5px 3.5px 0 #666;
+    }
+    .elementUl li {
+        margin-top: 25px;
+    }
+   
+    /*------------------------------------*/
+    .connect_linksbox {
+        display: grid;
+        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px;
+        grid-template-rows: [ro1] 30px [ro2] 30px;
+        justify-content: center;
+}
+    .fa-brands.fa-linkedin {
+        font-size: 30px;
+    }
+    .fa-brands.fa-square-github {
+        font-size: 30px;
+    }
     .container_leave_message {
         width: 100%;
         max-width: 600px;
@@ -566,6 +657,54 @@ h2 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    /*---------- projects ----------------*/
+    .container_projects {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        /*border: 2px solid black;*/
+    }
+    /*
+    #Projects {
+        border: 2px solid black;
+    }
+    */
+    .elementUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        font-size: 22px;
+        padding-left: 0px;
+        /*border: 2px solid black;*/
+        font-family: 'Press Start 2P', cursive;
+        color: rgb(0, 85, 255);
+        text-shadow:
+        0.5px 0.5px 0 #ccc,
+        1px 1px 0 #bbb,
+        1.5px 1.5px 0 #aaa,
+        2px 2px 0 #999,
+        2.5px 2.5px 0 #888,
+        3px 3px 0 #777,
+        3.5px 3.5px 0 #666;
+    }
+    .elementUl li {
+        margin-top: 25px;
+    }
+   
+    /*------------------------------------*/
+    .connect_linksbox {
+        display: grid;
+        grid-template-columns: [col1] 40px [col2] 40px [col3] 40px;
+        grid-template-rows: [ro1] 40px [ro2] 40px;
+        justify-content: center;
+}
+    .fa-brands.fa-linkedin {
+        font-size: 40px;
+    }
+    .fa-brands.fa-square-github {
+        font-size: 40px;
+    }
     .container_leave_message {
         width: 100%;
         max-width: 600px;
@@ -742,7 +881,7 @@ h2 {
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
-        margin-left: 250px;
+        margin-left: 285px;
         /*border: 2px solid black;*/
         width: auto;
         flex: 1;
@@ -779,7 +918,7 @@ h2 {
         padding-left: 0px;
         /*border: 2px solid black;*/
         font-family: 'Press Start 2P', cursive;
-        color: rgb(255, 170, 0);
+        color: rgb(0, 85, 255);
         text-shadow:
         0.5px 0.5px 0 #ccc,
         1px 1px 0 #bbb,
@@ -789,8 +928,23 @@ h2 {
         3px 3px 0 #777,
         3.5px 3.5px 0 #666;
     }
+    .elementUl li {
+        margin-top: 25px;
+    }
    
     /*------------------------------------*/
+    .connect_linksbox {
+        display: grid;
+        grid-template-columns: [col1] 50px [col2] 50px [col3] 50px;
+        grid-template-rows: [ro1] 50px [ro2] 50px;
+        justify-content: center;
+}
+    .fa-brands.fa-linkedin {
+        font-size: 50px;
+    }
+    .fa-brands.fa-square-github {
+        font-size: 50px;
+    }
     .container_leave_message {
         width: 100%;
         max-width: 600px;

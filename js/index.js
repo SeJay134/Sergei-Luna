@@ -136,16 +136,32 @@ Console.log the value of repositories to better see the data returned from your 
 Save and refresh your browser (or just check your browser for changes if using live extension)
 You should see the list of your GitHub repositories displayed in your console.
 */
+
+/* Create a variable names projectSection; using "DOM Selection" to select the projects section by id */
+let projectSection = document.getElementById("Projects");
+console.log("projectSection", projectSection);
+/* Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire 
+document) to select the element */
+let projectList = projectSection.querySelector(".elementUl");
+
 let repositories;
-fetch('https://api.github.com/users/SeJay134/repos')
+fetch('https://api.github.com/users/sejay134/repos')
     .then(respond => {
         console.log("respond", respond)
+        if (respond.ok === false) {
+            throw new Error(`Error: ${respond.status} ${respond.text}`);
+        }
         return respond.json();
     })
     .then(data => {
         console.log("myData", data)
         repositories = data;
         console.log("repo", repositories);
+        if (repositories.length === 0) {
+            let noItem = document.createElement("li");
+            noItem.innerHTML = "No added Projects";
+            projectList.appendChild(noItem);
+        }
         /* Create a for loop to iterate over your repositories Array, starting at index 0 */
         /* Inside the loop, create a variable named project to make a new list item (li) element
             hint: createElement method */
@@ -162,12 +178,10 @@ fetch('https://api.github.com/users/SeJay134/repos')
     })
     .catch(error => {
         console.log("error", error)
+        let noproject = document.createElement("li");
+        noproject.textContent = "error";
+        projectList.appendChild(noproject);
     })
 
-/* Create a variable names projectSection; using "DOM Selection" to select the projects section by id */
-let projectSection = document.getElementById("Projects");
-console.log("projectSection", projectSection);
-/* Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire 
-document) to select the element */
-let projectList = projectSection.querySelector(".elementUl");
+
 
