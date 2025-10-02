@@ -145,6 +145,7 @@ document) to select the element */
 let projectList = projectSection.querySelector(".elementUl");
 
 let repositories;
+
 fetch('https://api.github.com/users/sejay134/repos')
     .then(respond => {
         console.log("respond", respond)
@@ -157,6 +158,8 @@ fetch('https://api.github.com/users/sejay134/repos')
         console.log("myData", data)
         repositories = data;
         console.log("repo", repositories);
+        
+        
         if (repositories.length === 0) {
             let noItem = document.createElement("li");
             noItem.innerHTML = "No added Projects";
@@ -170,11 +173,24 @@ fetch('https://api.github.com/users/sejay134/repos')
             console.log("project_li", project);
             /* On the next line, set the inner text of your project variable to the current Array element's name property
             hint: access the Array element using bracket notation */
-            project.innerHTML = `${repositories[x].name}`;
+            let url = document.createElement("a");
+            url.href = repositories[x].html_url;
+            url.target = "_blank";
+            url.classList.add("project_link");
+            url.textContent = repositories[x].name;
+            /*project.innerHTML = `${repositories[x].name}`;*/
             /* On the next line, append the project element to the projectList element
             hint: appendChild method */
+            project.appendChild(url);
             projectList.appendChild(project);
+            
         }
+        return data; // return data from GitHub
+    })
+    .then(repo_url => {
+        repo_url.forEach(data_url => {
+            console.log("repos_url", data_url.html_url); // take URL
+        })
     })
     .catch(error => {
         console.log("error", error)

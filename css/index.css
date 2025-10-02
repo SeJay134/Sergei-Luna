@@ -32,12 +32,7 @@ section {
     border-radius: 5px;
 }
 
-.container_about {
-    width: 100%;
-    max-width: 600px;
-    min-width: 200px;
-    height: auto;
-}
+
 
 .About_text_container {
     background-color: #e4f1fe;
@@ -94,12 +89,19 @@ section {
 }
 
 
-
+/*
 #link {
     color: rgb(0, 0, 0);
     text-decoration-style: dashed;
     text-decoration-color: rgb(5, 21, 238);
     font-size: 20px;
+}*/
+.project_link {
+    
+    color: rgb(5, 21, 238);
+}
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -141,18 +143,27 @@ h2 {
         left: 0px;
         /*border: 2px solid black;*/
     }
-    .imgPS {
-        border: 1px solid;
-        height: 70px;
-        width: 70px;
-        border: 2px solid black;
+    .imgPS { /**/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(220, 245, 228);
+        width: 63px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .imgPS img {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 5px;
     }
     .container_nav {
         /*border: 2px solid black;*/
         margin-top: 0px;
         margin-left: 15px;
         width: auto;
-        font-size: 10px;
+        font-size: 8px;
     }
     .navbar_box {
         display: flex;
@@ -163,14 +174,16 @@ h2 {
         /*border: 2px solid black;*/
     }
     .About_text_container, .container_job_text {
-        font-size: 14px;
+        font-size: 0.7rem;
+        padding: 10px 10px 10px 10px;
+        text-indent: 2em;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
     .container_job_title {
-        font-size: 20px;
+        font-size: 16px;
     }
     .right_container {
         display: flex;
@@ -180,12 +193,22 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         margin-top: 120px;
+        margin-left: 30px;
+    }
+    .fullname {
+        font-size: 0.9rem;
+    }
+    .container_about {
+        width: 100%;
+        max-width: 400px;
+        min-width: 200px;
+        height: auto;
     }
 
     .skills_ul_box {
         display: flex;
         list-style: none;
-        font-size: 25px;
+        font-size: 1.2rem;
         /*border: 2px solid black;*/
         gap: 30px;
         padding-left: 0px;
@@ -260,24 +283,24 @@ h2 {
     }
     .input_text {
         width: 100%;
-        max-width: 440px;
+        max-width: 350px;
         min-width: 200px;
-        height: 35px;
-        font-size: 1em;
+        height: 30px;
+        font-size: 0.8em;
     }
     .input_email {
         width: 100%;
-        max-width: 440px;
+        max-width: 350px;
         min-width: 200px;
-        height: 35px;
-        font-size: 1em;
+        height: 30px;
+        font-size: 0.8em;
     }
     .users_message {
         width: 100%;
-        max-width: 440px;
+        max-width: 350px;
         min-width: 200px;
         height: 100px;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .button_submit {
         width: 90px;
@@ -291,7 +314,7 @@ h2 {
     }
     .container_messages {
         width: 100%;
-        max-width: 440px;
+        max-width: 350px;
         min-width: 200px;
         /*border: 2px solid black;*/
     }
@@ -338,7 +361,7 @@ h2 {
         border-radius: 2px;
         cursor: pointer;
         margin-top: 10px;
-        margin-left: 360px;
+        margin-left: 268px;
         border-color:rgb(179, 179, 179);
     }
     .remove_button:hover {
@@ -375,12 +398,20 @@ h2 {
         left: 0px;
         /*border: 2px solid black;*/
     }
-    .imgPS {
+    .imgPS { /**/
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 1px solid;
-        height: 90px;
-        width: 90px;
+        border: 1px solid rgb(220, 245, 228);
+        width: 73px;
+        height: 95px;
+        border-radius: 5px;
+    }
+    .imgPS img {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 5px;
     }
     .container_nav {
         /*border: 2px solid black;*/
@@ -398,7 +429,9 @@ h2 {
         /*border: 2px solid black;*/
     }
     .About_text_container, .container_job_text {
-        font-size: 16px;
+        font-size: 0.9rem;
+        padding: 10px 10px 10px 10px;
+        text-indent: 2em;
     }
     h2 {
         font-size: 24px;
@@ -414,6 +447,12 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         margin-top: 130px;
+    }
+    .container_about {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        height: auto;
     }
     .skills_ul_box {
         display: flex;
@@ -606,12 +645,20 @@ h2 {
         top: 0;
         left: 0px;
     }
-    .imgPS {
+    .imgPS { /**/
         margin-top: 0px;
         margin-bottom: 0px;
-        border: 1px solid black;
-        height: 120px;
+        border: 1px solid rgb(220, 245, 228);
         width: 120px;
+        height: 164px;
+        border-radius: 5px;
+    }
+    .imgPS img {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 5px;
     }
     .container_nav {
         /*border: 2px solid black;*/
@@ -629,7 +676,9 @@ h2 {
         /*border: 2px solid black;*/
     }
     .About_text_container, .container_job_text {
-        font-size: 17px;
+        font-size: 1.0rem;
+        padding: 10px 10px 10px 10px;
+        text-indent: 2em;
     }
 
     h2 {
@@ -645,6 +694,12 @@ h2 {
         align-items: center;
         /*border: 2px solid black;*/
         width: auto;
+    }
+    .container_about {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        height: auto;
     }
     .skills_ul_box {
         display: flex;
@@ -840,9 +895,17 @@ h2 {
     .imgPS { /**/
         margin-top: 30px;
         margin-bottom: 30px;
-        border: 1px solid;
-        height: 200px;
+        border-color: rgba(220, 245, 228);
         width: 200px;
+        height: 274px;
+        border-radius: 5px;
+    }
+    .imgPS img {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 5px;
     }
     .navbar_box { /**/
         display: flex;
@@ -866,7 +929,9 @@ h2 {
         justify-content: flex-end;
     }
     .About_text_container, .container_job_text { /**/
-        font-size: 18px;
+        font-size: 1.1rem;
+        padding: 10px 10px 10px 10px;
+        text-indent: 2em;
     }
 
     h2 { /**/
@@ -885,6 +950,12 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
         flex: 1;
+    }
+    .container_about {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        height: auto;
     }
     .skills_ul_box {
         display: flex;
