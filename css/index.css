@@ -6,6 +6,26 @@ body {
     justify-content: center;
     font-size: 18px;
 }
+body.dark,
+body.dark .left_container,
+body.dark .About_text_container,
+body.dark h2,
+body.dark .container_job_text,
+body.dark .input_text,
+body.dark .input_email,
+body.dark .users_message,
+body.dark .input_text::placeholder,
+body.dark .input_email::placeholder,
+body.dark .users_message::placeholder {
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 87, 87);
+}
+body.dark .button_dark_mode {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-color: black;
+}
+
 
 html {
     height: 100%;
@@ -76,7 +96,7 @@ section {
 }
 
 .container_job_title {
-    text-decoration: underline rgb(135, 135, 135);
+    text-decoration: underline rgb(182, 182, 182);
 }
 
 .container_job_text {
@@ -91,10 +111,8 @@ section {
 
 /*
 #link {
-    color: rgb(0, 0, 0);
     text-decoration-style: dashed;
     text-decoration-color: rgb(5, 21, 238);
-    font-size: 20px;
 }*/
 .project_link {
     
@@ -146,7 +164,7 @@ h2 {
     .imgPS { /**/
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 1px solid rgb(220, 245, 228);
+        /*border: 1px solid rgb(220, 245, 228);*/
         width: 63px;
         height: 90px;
         border-radius: 5px;
@@ -168,10 +186,20 @@ h2 {
     .navbar_box {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         list-style: none;
         padding-left: 0px;
         /*border: 2px solid black;*/
+    }
+    .button_dark_mode {
+        width: 70px;
+        height: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        border-color:rgb(230, 255, 238);
+        background-color: rgb(220, 245, 228);;
+        font-size: 0.5rem;
     }
     .About_text_container, .container_job_text {
         font-size: 0.7rem;
@@ -207,6 +235,12 @@ h2 {
 
     .skills_ul_box {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 400px;
+        height: auto;
         list-style: none;
         font-size: 1.2rem;
         /*border: 2px solid black;*/
@@ -260,9 +294,11 @@ h2 {
 }
     .fa-brands.fa-linkedin {
         font-size: 30px;
+        color: blue;
     }
     .fa-brands.fa-square-github {
         font-size: 30px;
+        color: black;
     }
     .container_leave_message {
         width: 100%;
@@ -367,6 +403,18 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
+    .edit_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 268px;
+        border-color:rgb(179, 179, 179);
+    }
+    .edit_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -401,7 +449,7 @@ h2 {
     .imgPS { /**/
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 1px solid rgb(220, 245, 228);
+        /*border: 1px solid rgb(220, 245, 228);*/
         width: 73px;
         height: 95px;
         border-radius: 5px;
@@ -423,10 +471,20 @@ h2 {
     .navbar_box {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         list-style: none;
         padding-left: 0px;
         /*border: 2px solid black;*/
+    }
+        .button_dark_mode {
+        width: 80px;
+        height: 25px;
+        border-radius: 2px;
+        cursor: pointer;
+        border-color:rgb(230, 255, 238);
+        background-color: rgb(220, 245, 228);;
+        font-size: 0.8rem;
     }
     .About_text_container, .container_job_text {
         font-size: 0.9rem;
@@ -456,6 +514,12 @@ h2 {
     }
     .skills_ul_box {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 600px;
+        height: auto;
         list-style: none;
         font-size: 28px;
         /*border: 2px solid black;*/
@@ -509,9 +573,11 @@ h2 {
 }
     .fa-brands.fa-linkedin {
         font-size: 30px;
+        color: blue;
     }
     .fa-brands.fa-square-github {
         font-size: 30px;
+        color: black;
     }
     .container_leave_message {
         width: 100%;
@@ -616,6 +682,18 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
+    .edit_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 370px;
+        border-color:rgb(179, 179, 179);
+    }
+    .edit_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -648,7 +726,7 @@ h2 {
     .imgPS { /**/
         margin-top: 0px;
         margin-bottom: 0px;
-        border: 1px solid rgb(220, 245, 228);
+        /*border: 1px solid rgb(220, 245, 228);*/
         width: 120px;
         height: 164px;
         border-radius: 5px;
@@ -670,10 +748,20 @@ h2 {
     .navbar_box {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         list-style: none;
         padding-left: 0px;
         /*border: 2px solid black;*/
+    }
+        .button_dark_mode {
+        width: 90px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        border-color:rgb(230, 255, 238);
+        background-color: rgb(220, 245, 228);;
+        font-size: 0.9rem;
     }
     .About_text_container, .container_job_text {
         font-size: 1.0rem;
@@ -703,6 +791,12 @@ h2 {
     }
     .skills_ul_box {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 600px;
+        height: auto;
         list-style: none;
         font-size: 32px;
         /*border: 2px solid black;*/
@@ -756,9 +850,11 @@ h2 {
 }
     .fa-brands.fa-linkedin {
         font-size: 40px;
+        color: blue;
     }
     .fa-brands.fa-square-github {
         font-size: 40px;
+        color: black;
     }
     .container_leave_message {
         width: 100%;
@@ -863,6 +959,18 @@ h2 {
     .remove_button:hover {
         background-color: rgb(213, 213, 213);
     }
+    .edit_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 418px;
+        border-color:rgb(179, 179, 179);
+    }
+    .edit_button:hover {
+        background-color: rgb(213, 213, 213);
+    }
     .container_footer {
         margin-top: 100px;
         height: 50px;
@@ -895,7 +1003,7 @@ h2 {
     .imgPS { /**/
         margin-top: 30px;
         margin-bottom: 30px;
-        border-color: rgba(220, 245, 228);
+        /*border-color: rgba(220, 245, 228);*/
         width: 200px;
         height: 274px;
         border-radius: 5px;
@@ -959,6 +1067,12 @@ h2 {
     }
     .skills_ul_box {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 600px;
+        height: auto;
         list-style: none;
         font-size: 32px;
         /*border: 2px solid black;*/
@@ -1012,9 +1126,11 @@ h2 {
 }
     .fa-brands.fa-linkedin {
         font-size: 50px;
+        color: blue;
     }
     .fa-brands.fa-square-github {
         font-size: 50px;
+        color: black;
     }
     .container_leave_message {
         width: 100%;
@@ -1116,7 +1232,19 @@ h2 {
         margin-left: 418px;
         border-color:rgb(179, 179, 179);
     }
-    .remove_button:hover {
+        .remove_button:hover {
+            background-color: rgb(213, 213, 213);
+    }
+    .edit_button {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 418px;
+        border-color:rgb(179, 179, 179);
+    }
+    .edit_button:hover {
         background-color: rgb(213, 213, 213);
     }
     .container_footer { /**/

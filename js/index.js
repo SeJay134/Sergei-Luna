@@ -19,7 +19,7 @@ find_footer_box.appendChild(footer_box_p);
 /* Create List of Skills */
 
 /* List your technical skills by creating an Array of String values and store it in a variable named skills */
-let skills = ["JavaScript", "HTML", "CSS", "Git", "GitHub"];
+let skills = ["JavaScript", "HTML", "CSS", "Git", "GitHub", "DevTool"];
 /* Create a variable named skillsSection and use "DOM Selection" to select the skills section by id */
 const skillsSection = document.getElementById("Skills");
 /* Create a variable named skillsList and use "DOM Selection" to query the skillsSection (instead of the entire document) to select the <ul> element you created earlier in this assignment */
@@ -75,6 +75,29 @@ let messageForm = document.querySelector(".leave_message");
     removeButton.type = "button";
     removeButton.classList.add("remove_button");
 
+    // add edit button
+    let edit_button = document.createElement("button"); // create button
+    edit_button.innerText = "Edit"; // text
+    edit_button.type = "button"; // type
+    edit_button.classList.add("edit_button"); // class
+
+    edit_button.addEventListener("click", (event) => { // get click
+        let li = event.target.parentNode; // get element li
+        let message_span = li.querySelector("span"); // get element span
+        let curent_text = message_span.textContent; // save a message
+        let input = document.createElement("input"); // create input
+        input.value = curent_text;
+
+        input.addEventListener("blur", () => { // out field or enter
+            let span = document.createElement("span");
+            span.textContent = input.value;
+            li.replaceChild(span, input); // replace values
+        });
+
+        li.replaceChild(input, message_span); // replace new to old parentNode.replaceChild(new, old)
+        input.focus();
+    })
+
     /* Add an event listener to the removeButton element that handles the "click" event */
     removeButton.addEventListener("click", function(event){
         /* Inside the callback function, create a variable named entry that finds the button's parent element using DOM Traversal (hint: parentNode property) */
@@ -84,6 +107,7 @@ let messageForm = document.querySelector(".leave_message");
         entry.remove();
     });
     
+    newMessage.appendChild(edit_button);
     /* Append the removeButton to the newMessage element */
     newMessage.appendChild(removeButton);
     /* Append the newMessage to the messageList element */
@@ -189,7 +213,7 @@ fetch('https://api.github.com/users/sejay134/repos')
     })
     .then(repo_url => {
         repo_url.forEach(data_url => {
-            console.log("repos_url", data_url.html_url); // take URL
+            console.log("repos_url", data_url.html_url); // take URL, checker
         })
     })
     .catch(error => {
@@ -199,5 +223,11 @@ fetch('https://api.github.com/users/sejay134/repos')
         projectList.appendChild(noproject);
     })
 
+// Dark mode .button_dark_mode
+let d = document.querySelector(".button_dark_mode"); // get the selector of button
+d.addEventListener("click", () => { // lisen a click of button
+document.body.classList.toggle("dark"); // add the class to body body.dark
+})
+    
 
 
