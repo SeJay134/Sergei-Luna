@@ -1,3 +1,6 @@
+html {
+      scroll-behavior: smooth;
+    }
 body {
     display: flex;
     color: black;
@@ -25,7 +28,12 @@ body.dark .button_dark_mode {
     color: white;
     border-color: black;
 }
-
+.button_dark_mode:hover {
+    transform: scale(1.05);
+    transition: 3s ease;
+    background-color: #000000;
+    color: white;
+}
 
 html {
     height: 100%;
@@ -41,6 +49,10 @@ html {
     color: white;
     font: 1.5em Georgia, serif;
 }
+.navbar_box li:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
 
 #name {
     text-transform: uppercase;
@@ -51,7 +63,10 @@ section {
     /*border: 1px solid black;*/
     border-radius: 5px;
 }
-
+.elementUl li:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
 
 
 .About_text_container {
@@ -60,19 +75,15 @@ section {
     box-shadow: 2px 5px rgba(0, 0, 0, 0.075),
     0 6px 6px rgba(0, 0, 0, 0.041);
 }
-
+#About {
+    scroll-margin-top: 290px;
+}
 #About p {
     text-align: justify;
-    margin: 10px;
+    margin: 0px;
 }
 
-.container_experience {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    min-width: 200px;
-    height: auto;
-}
+
 
 #Experience p {
     text-align: justify;
@@ -139,7 +150,7 @@ h2 {
         display: flex;
         /*border: 2px solid black;*/
         flex-direction: column;
-        min-width: 425px;
+        min-width: 325px;
     }
     .left_container {
         display: flex;
@@ -149,24 +160,24 @@ h2 {
         align-items: center;
         padding-left: 10px;
         padding-right: 10px;
-        height: 150px;
+        height: 160px;
         position: fixed;
         z-index: 1000;
         background-color: rgb(220, 245, 228);
         top: 0;
-        height: 120px;
+        
         width: 100%;
         max-width: 460px;
-        min-width: 400px;
+        min-width: 300px;
         left: 0px;
         /*border: 2px solid black;*/
     }
     .imgPS { /**/
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 10px;
         /*border: 1px solid rgb(220, 245, 228);*/
-        width: 63px;
-        height: 90px;
+        width: 83px;
+        height: 110px;
         border-radius: 5px;
     }
     .imgPS img {
@@ -178,10 +189,12 @@ h2 {
     }
     .container_nav {
         /*border: 2px solid black;*/
-        margin-top: 0px;
-        margin-left: 15px;
-        width: auto;
-        font-size: 8px;
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+        max-width: 300px;
+        min-width: 250px;
+        font-size: 15px;
     }
     .navbar_box {
         display: flex;
@@ -189,7 +202,10 @@ h2 {
         flex-wrap: wrap;
         gap: 10px;
         list-style: none;
-        padding-left: 0px;
+        padding: 5px 5px 5px 5px;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
         /*border: 2px solid black;*/
     }
     .button_dark_mode {
@@ -202,7 +218,7 @@ h2 {
         font-size: 0.5rem;
     }
     .About_text_container, .container_job_text {
-        font-size: 0.7rem;
+        font-size: 1.0rem;
         padding: 10px 10px 10px 10px;
         text-indent: 2em;
     }
@@ -220,19 +236,29 @@ h2 {
         align-items: center;
         /*border: 2px solid black;*/
         width: auto;
-        margin-top: 120px;
-        margin-left: 30px;
+        margin-top: 160px;
+        margin-left: 0px;
     }
     .fullname {
         font-size: 0.9rem;
     }
+    #About {
+        padding: 10px;
+    }
     .container_about {
+        width: 100%;
+        max-width: 380px;
+        min-width: 200px;
+        height: auto;
+        padding: 10px 10px 10px 10px;   
+    }
+    .container_experience {
+        display: block;
         width: 100%;
         max-width: 400px;
         min-width: 200px;
         height: auto;
-    }
-
+}
     .skills_ul_box {
         display: flex;
         flex-wrap: wrap;
@@ -434,24 +460,25 @@ h2 {
         display: flex;
         overflow-y: hidden;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         position: fixed;
         z-index: 1000;
         background-color: rgb(220, 245, 228);
         top: 0;
-        height: 130px;
+        height: 160px;
         width: 100%;
+        max-width: 760px;
         padding-left: 10px;
         left: 0px;
         /*border: 2px solid black;*/
     }
     .imgPS { /**/
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 10px;
         /*border: 1px solid rgb(220, 245, 228);*/
-        width: 73px;
-        height: 95px;
+        width: 120px;
+        height: 150px;
         border-radius: 5px;
     }
     .imgPS img {
@@ -465,19 +492,24 @@ h2 {
         /*border: 2px solid black;*/
         margin-top: 0px;
         margin-left: 15px;
-        width: auto;
-        font-size: 10px;
+        width: 100%;
+        max-width: 590px;
+        min-width: 250px;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 15px;
     }
     .navbar_box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
         list-style: none;
-        padding-left: 0px;
+        padding: 5px 5px 5px 5px;
+        justify-content: space-evenly;
         /*border: 2px solid black;*/
     }
-        .button_dark_mode {
+    .button_dark_mode {
         width: 80px;
         height: 25px;
         border-radius: 2px;
@@ -487,7 +519,7 @@ h2 {
         font-size: 0.8rem;
     }
     .About_text_container, .container_job_text {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         padding: 10px 10px 10px 10px;
         text-indent: 2em;
     }
@@ -504,13 +536,19 @@ h2 {
         align-items: center;
         /*border: 2px solid black;*/
         width: auto;
-        margin-top: 130px;
+        margin-top: 160px;
+    }
+    .fullname {
+        font-size: 1rem;
     }
     .container_about {
         width: 100%;
-        max-width: 600px;
+        
         min-width: 200px;
         height: auto;
+    }
+    #About {
+        margin: 10px;
     }
     .skills_ul_box {
         display: flex;
@@ -708,12 +746,13 @@ h2 {
         display: flex;
         /*border: 2px solid black;*/
         flex-direction: column;
+        
     }
     .left_container {
         display: flex;
         overflow-y: hidden;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         /*border: 2px solid black;*/
         height: 250px;
@@ -722,13 +761,15 @@ h2 {
         background-color: rgb(220, 245, 228);
         top: 0;
         left: 0px;
+        width: 100%;
+        max-width: 1010px;
     }
     .imgPS { /**/
         margin-top: 0px;
         margin-bottom: 0px;
         /*border: 1px solid rgb(220, 245, 228);*/
-        width: 120px;
-        height: 164px;
+        width: 145px;
+        height: 200px;
         border-radius: 5px;
     }
     .imgPS img {
@@ -741,15 +782,17 @@ h2 {
     .container_nav {
         /*border: 2px solid black;*/
         margin-top: 0px;
-        margin-left: 25px;
+        margin-left: 0px;
         width: auto;
-        font-size: 14px;
+        font-size: 20px;
+        padding: 15px;
+        max-width: 600px;
     }
     .navbar_box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
         list-style: none;
         padding-left: 0px;
         /*border: 2px solid black;*/
@@ -764,13 +807,13 @@ h2 {
         font-size: 0.9rem;
     }
     .About_text_container, .container_job_text {
-        font-size: 1.0rem;
+        font-size: 1.4rem;
         padding: 10px 10px 10px 10px;
         text-indent: 2em;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
     .container_job_title {
         font-size: 22px;
@@ -783,9 +826,12 @@ h2 {
         /*border: 2px solid black;*/
         width: auto;
     }
+    .fullname {
+        font-size: 1.4rem;
+    }
     .container_about {
         width: 100%;
-        max-width: 600px;
+        max-width: 1010px;
         min-width: 200px;
         height: auto;
     }
@@ -1020,16 +1066,27 @@ h2 {
         flex-direction: column;
         gap: 20px;
         list-style: none;
-        padding-left: 0px;
+        padding-left: 25px;
         /*border: 2px solid black;*/
     }
+    .button_dark_mode {
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color:rgb(230, 255, 238);
+        background-color: rgb(220, 245, 228);;
+        font-size: 0.9rem;
+    }
+
     .container_nav { /**/
         /*border: 2px solid black;*/
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
         padding-left: 0px;
         width: auto;
         font-size: 18px;
+        
     }
     .img_nav_boxes {
         display: flex;
@@ -1037,7 +1094,7 @@ h2 {
         justify-content: flex-end;
     }
     .About_text_container, .container_job_text { /**/
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         padding: 10px 10px 10px 10px;
         text-indent: 2em;
     }
@@ -1054,14 +1111,14 @@ h2 {
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
-        margin-left: 285px;
+        margin-left: 355px;
         /*border: 2px solid black;*/
         width: auto;
         flex: 1;
     }
     .container_about {
         width: 100%;
-        max-width: 600px;
+        
         min-width: 200px;
         height: auto;
     }
@@ -1077,7 +1134,7 @@ h2 {
         font-size: 32px;
         /*border: 2px solid black;*/
         gap: 30px;
-        padding-left: 0px;
+        padding: 10px;
         background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1232,8 +1289,8 @@ h2 {
         margin-left: 418px;
         border-color:rgb(179, 179, 179);
     }
-        .remove_button:hover {
-            background-color: rgb(213, 213, 213);
+    .remove_button:hover {
+        background-color: rgb(213, 213, 213);
     }
     .edit_button {
         width: 80px;
