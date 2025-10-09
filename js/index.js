@@ -87,16 +87,20 @@ let messageForm = document.querySelector(".leave_message");
         let curent_text = message_span.textContent; // save a message
         let input = document.createElement("input"); // create input
         input.value = curent_text;
+        edit_button.innerText = "Submit"; // rename Edit to Submit
 
         input.addEventListener("blur", () => { // out field or enter
             let span = document.createElement("span");
             span.textContent = input.value;
             li.replaceChild(span, input); // replace values
+            edit_button.innerText = "Edit"; // rename Submit to Edit
         });
 
         li.replaceChild(input, message_span); // replace new to old parentNode.replaceChild(new, old)
         input.focus();
     })
+
+
 
     /* Add an event listener to the removeButton element that handles the "click" event */
     removeButton.addEventListener("click", function(event){
@@ -113,29 +117,47 @@ let messageForm = document.querySelector(".leave_message");
     /* Append the newMessage to the messageList element */
     messageList.appendChild(newMessage);
 
+// add hide elements after submit
+let span = messageList.querySelector("span");
+console.log("span", span);
+    if (span && span.textContent.trim() !== "") {
+        console.log("span not empty", span.textContent);
+        emailInput.style.display = "none"; // email form haded
+        messageInput.style.display = "none"; // message form hided
+    } else if (span) {
+        console.log("span empty", span.textContent);
+    } else {
+        console.log("span not finded");
+    }
+
 /* Inside the callback function, on the very last line, add a new line of code to clear the form */
     this.reset();
 });
 
+
+
+
+
 /* hided elements */
-const textInput = document.querySelector(".input_text");
 const emailInput = document.querySelector(".input_email");
 const messageInput = document.querySelector(".users_message");
+// not hided
+const textInput = document.querySelector(".input_text");
 const buttonSubmitInput = document.querySelector(".button_submit");
 
-textInput.addEventListener("input", function() {
-    if (this.value.trim() !== "") {
-        emailInput.style.display = "block";
+textInput.addEventListener("input", function() { // listener input form .input_text
+    if (this.value.trim() !== "") { // not empty
+        emailInput.style.display = "block"; // will see email form
     } else {
-        messageInput.style.display = "none";
-        buttonSubmitInput.style.display = "none";
+        messageInput.style.display = "none"; // hided
+        buttonSubmitInput.style.display = "none"; // hided
     }
 });
 
-emailInput.addEventListener("input", function() {
+emailInput.addEventListener("input", function() { // listener email form .input_email
     if (this.value.trim() !== "") {
-        messageInput.style.display = "block";
-        buttonSubmitInput.style.display = "block";
+        messageInput.style.display = "block"; // will see form
+        buttonSubmitInput.style.display = "block"; // will see form
     }
 });
 
