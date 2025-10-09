@@ -49,6 +49,11 @@ html {
     color: white;
     font: 1.5em Georgia, serif;
 }
+body.dark .navbar a {
+    text-shadow: 15px 13px 6px rgb(0, 0, 0),
+    0 0 1em #7fbfff,
+    0 0 0.2em #7fbfff;
+}
 .navbar_box li:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
@@ -140,6 +145,9 @@ h1 {
 h2 {
     color: rgba(26, 26, 26, 0.277);
     text-align: center;
+}
+body.dark h2 {
+    text-shadow: 17px 11px 6px #03030399;
 }
 
 
