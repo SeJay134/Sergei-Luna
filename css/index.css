@@ -314,7 +314,7 @@ h2 {
     /*------------------------------------*/
     .connect_linksbox {
         display: grid;
-        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px;
+        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px [col4] 30px [col5] 30px;
         grid-template-rows: [ro1] 30px [ro2] 30px;
         justify-content: center;
 }
@@ -325,6 +325,10 @@ h2 {
     .fa-brands.fa-square-github {
         font-size: 30px;
         color: black;
+    }
+    .fa-solid.fa-envelope {
+        font-size: 30px;
+        color: rgb(251, 119, 3);
     }
     .container_leave_message {
         width: 100%;
@@ -605,7 +609,7 @@ h2 {
     /*------------------------------------*/
     .connect_linksbox {
         display: grid;
-        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px;
+        grid-template-columns: [col1] 30px [col2] 30px [col3] 30px [col4] 30px [col5] 30px;
         grid-template-rows: [ro1] 30px [ro2] 30px;
         justify-content: center;
 }
@@ -616,6 +620,10 @@ h2 {
     .fa-brands.fa-square-github {
         font-size: 30px;
         color: black;
+    }
+    .fa-solid.fa-envelope {
+        font-size: 30px;
+        color: rgb(251, 119, 3);
     }
     .container_leave_message {
         width: 100%;
@@ -890,7 +898,7 @@ h2 {
     /*------------------------------------*/
     .connect_linksbox {
         display: grid;
-        grid-template-columns: [col1] 40px [col2] 40px [col3] 40px;
+        grid-template-columns: [col1] 40px [col2] 40px [col3] 40px [col4] 40px [col5] 40px;
         grid-template-rows: [ro1] 40px [ro2] 40px;
         justify-content: center;
 }
@@ -901,6 +909,10 @@ h2 {
     .fa-brands.fa-square-github {
         font-size: 40px;
         color: black;
+    }
+    .fa-solid.fa-envelope {
+        font-size: 40px;
+        color: rgb(251, 119, 3);
     }
     .container_leave_message {
         width: 100%;
@@ -1177,7 +1189,7 @@ h2 {
     /*------------------------------------*/
     .connect_linksbox {
         display: grid;
-        grid-template-columns: [col1] 50px [col2] 50px [col3] 50px;
+        grid-template-columns: [col1] 50px [col2] 50px [col3] 50px [col4] 50px [col5] 50px;
         grid-template-rows: [ro1] 50px [ro2] 50px;
         justify-content: center;
 }
@@ -1188,6 +1200,10 @@ h2 {
     .fa-brands.fa-square-github {
         font-size: 50px;
         color: black;
+    }
+    .fa-solid.fa-envelope {
+        font-size: 50px;
+        color: rgb(251, 119, 3);
     }
     .container_leave_message {
         width: 100%;
