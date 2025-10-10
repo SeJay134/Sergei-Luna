@@ -56,6 +56,13 @@ body.dark .elementUl li {
 body.dark .project_link {
     opacity: 0.8;
 }
+body.dark .button_submit {
+    box-shadow: inset 0px 0px 0px 0px #fff,
+      1px 1px 1px 1px #bbb,
+      2px 2px 5px 3px rgba(173, 173, 173, 0.2);
+    transition: all 0.1s ease-in-out;
+    background-color: #9a9999;
+}
 
 html {
     height: 100%;
