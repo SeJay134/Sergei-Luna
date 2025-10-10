@@ -424,6 +424,7 @@ body.dark h2 {
         border-radius: 5px;
         cursor: pointer;
         border-color:rgb(179, 179, 179);
+        background-color: #eeeded;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
@@ -732,6 +733,7 @@ body.dark h2 {
         border-radius: 5px;
         cursor: pointer;
         border-color:rgb(179, 179, 179);
+        background-color: #eeeded;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
@@ -1033,6 +1035,7 @@ body.dark h2 {
         border-radius: 5px;
         cursor: pointer;
         border-color:rgb(179, 179, 179);
+        background-color: #eeeded;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
@@ -1335,8 +1338,7 @@ body.dark h2 {
         border-radius: 5px;
         cursor: pointer;
         border-color:rgb(179, 179, 179);
-        -webkit-appearance: none;
-        appearance: none;
+        background-color: #eeeded;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
