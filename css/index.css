@@ -425,6 +425,7 @@ body.dark h2 {
         cursor: pointer;
         border-color:rgb(179, 179, 179);
         background-color: #eeeded;
+        color: #000000;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
@@ -734,6 +735,7 @@ body.dark h2 {
         cursor: pointer;
         border-color:rgb(179, 179, 179);
         background-color: #eeeded;
+        color: #000000;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
@@ -1339,6 +1341,7 @@ body.dark h2 {
         cursor: pointer;
         border-color:rgb(179, 179, 179);
         background-color: #eeeded;
+        color: #000000;
     }
     .button_submit:hover {
         background-color: rgb(213, 213, 213);
