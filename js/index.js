@@ -230,8 +230,10 @@ fetch('https://api.github.com/users/sejay134/repos')
             // tooltip
             let tooltip = document.createElement('span');
             tooltip.classList.add('tooltip');
+            tooltip.textContent = repositories[x].description || "No description available.";
 
             project.appendChild(url);
+            project.appendChild(tooltip);
             projectList.appendChild(project);
             
         }
