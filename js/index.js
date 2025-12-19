@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 /* footer div */
 const footer = document.querySelector(".container_footer");
 const div = document.createElement("div");
@@ -224,9 +226,11 @@ fetch('https://api.github.com/users/sejay134/repos')
             url.target = "_blank";
             url.classList.add("project_link");
             url.textContent = repositories[x].name;
-            /*project.innerHTML = `${repositories[x].name}`;*/
-            /* On the next line, append the project element to the projectList element
-            hint: appendChild method */
+            
+            // tooltip
+            let tooltip = document.createElement('span');
+            tooltip.classList.add('tooltip');
+
             project.appendChild(url);
             projectList.appendChild(project);
             
